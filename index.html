@@ -1,93 +1,93 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HuMii Show - Uma Experiência Única</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuMii Show - Uma Experiência Única</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="dark-mode">
-<header>
-<h1 class="event-title">HuMii</h1>
-<div class="accessibility-buttons">
-<button id="increase-font" title="Aumentar fonte">A+</button>
-<button id="decrease-font" title="Diminuir fonte">A-</button>
-</div>
-</header>
-
-<main>
-    <section id="about" class="content-section">
-        <h2 class="section-title">Sobre o HuMii</h2>
-        <p>Prepare-se para uma experiência musical e sensorial inesquecível! HuMii é um evento que celebra a conexão humana através da música, arte e tecnologia. Reunimos artistas inovadores e um público vibrante para uma noite mágica.</p>
-        <p>Explore sons envolventes, visuais hipnotizantes e uma atmosfera eletrizante. HuMii é mais do que um show, é uma imersão em um universo de criatividade e emoção.</p>
-    </section>
-
-    <section id="artists" class="content-section">
-        <h2 class="section-title">Artistas Confirmados</h2>
-        <ul>
-            <li>Artista Cósmico (Eletrônica Experimental)</li>
-            <li>Sinfonia de Almas (Indie Folk)</li>
-            <li>Ritmos da Terra (Percussão Afro-Brasileira)</li>
-            <li>Visuais Oníricos (VJ Set)</li>
-            </ul>
-    </section>
-
-    <section id="login-register" class="content-section">
-        <h2 class="section-title">Login e Cadastro</h2>
-        <div class="form-container">
-            <div id="login-area">
-                <h3>Login</h3>
-                <form>
-                    <label for="login-email">Email:</label>
-                    <input type="email" id="login-email" name="login-email" required>
-                    <label for="login-password">Senha:</label>
-                    <input type="password" id="login-password" name="login-password" required>
-                    <button type="submit">Entrar</button>
-                </form>
-            </div>
-            <div id="register-area">
-                <h3>Cadastro</h3>
-                <form>
-                    <label for="register-name">Nome:</label>
-                    <input type="text" id="register-name" name="register-name" required>
-                    <label for="register-email">Email:</label>
-                    <input type="email" id="register-email" name="register-email" required>
-                    <label for="register-password">Senha:</label>
-                    <input type="password" id="register-password" name="register-password" required>
-                    <button type="submit">Cadastrar</button>
-                </form>
-            </div>
+    <header>
+        <h1 class="event-title">HuMii</h1>
+        <div class="accessibility-buttons">
+            <button id="increase-font" title="Aumentar fonte">A+</button>
+            <button id="decrease-font" title="Diminuir fonte">A-</button>
         </div>
-    </section>
+    </header>
 
-    <section id="tickets" class="content-section">
-        <h2 class="section-title">Ingressos</h2>
-        <p>Os ingressos para o HuMii estarão à venda a partir de 15 de Agosto. Fique atento às nossas redes sociais para mais informações!</p>
-        <button class="call-to-action">Comprar Ingressos (Em Breve)</button>
-    </section>
-</main>
+    <main>
+        <section id="about" class="content-section">
+            <h2 class="section-title">Sobre o HuMii</h2>
+            <p>Prepare-se para uma experiência musical e sensorial inesquecível! HuMii é um evento que celebra a conexão humana através da música, arte e tecnologia. Reunimos artistas inovadores e um público vibrante para uma noite mágica.</p>
+            <p>Explore sons envolventes, visuais hipnotizantes e uma atmosfera eletrizante. HuMii é mais do que um show, é uma imersão em um universo de criatividade e emoção.</p>
+        </section>
 
-<footer>
-    <p>&copy; 2025 HuMii Show - Todos os direitos reservados.</p>
-</footer>
+        <section id="artists" class="content-section">
+            <h2 class="section-title">Artistas Confirmados</h2>
+            <ul>
+                <li>Artista Cósmico (Eletrônica Experimental)</li>
+                <li>Sinfonia de Almas (Indie Folk)</li>
+                <li>Ritmos da Terra (Percussão Afro-Brasileira)</li>
+                <li>Visuais Oníricos (VJ Set)</li>
+                
+            </ul>
+        </section>
 
-<script>
-    const body = document.body;
-    const increaseFontButton = document.getElementById('increase-font');
-    const decreaseFontButton = document.getElementById('decrease-font');
-    let currentFontSize = parseFloat(getComputedStyle(body).fontSize);
+        <section id="login-register" class="content-section">
+            <h2 class="section-title">Login e Cadastro</h2>
+            <div class="form-container">
+                <div id="login-area">
+                    <h3>Login</h3>
+                    <form>
+                        <label for="login-email">Email:</label>
+                        <input type="email" id="login-email" name="login-email" required>
+                        <label for="login-password">Senha:</label>
+                        <input type="password" id="login-password" name="login-password" required>
+                        <button type="submit">Entrar</button>
+                    </form>
+                </div>
+                <div id="register-area">
+                    <h3>Cadastro</h3>
+                    <form>
+                        <label for="register-name">Nome:</label>
+                        <input type="text" id="register-name" name="register-name" required>
+                        <label for="register-email">Email:</label>
+                        <input type="email" id="register-email" name="register-email" required>
+                        <label for="register-password">Senha:</label>
+                        <input type="password" id="register-password" name="register-password" required>
+                        <button type="submit">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-    increaseFontButton.addEventListener('click', () => {
-        currentFontSize += 2;
-        body.style.fontSize = `${currentFontSize}px`;
-    });
+        <section id="tickets" class="content-section">
+            <h2 class="section-title">Ingressos</h2>
+            <p>Os ingressos para o HuMii estarão à venda a partir de [Data de Início]. Fique atento às nossas redes sociais para mais informações!</p>
+            <button class="call-to-action">Comprar Ingressos (Em Breve)</button>
+        </section>
+    </main>
 
-    decreaseFontButton.addEventListener('click', () => {
-        currentFontSize -= 2;
-        if (currentFontSize < 12) currentFontSize = 12; // Limite mínimo para legibilidade
-        body.style.fontSize = `${currentFontSize}px`;
-    });
-</script>
+    <footer>
+        <p>© 2023 HuMii Show - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const body = document.body;
+        const increaseFontButton = document.getElementById('increase-font');
+        const decreaseFontButton = document.getElementById('decrease-font');
+        let currentFontSize = parseFloat(getComputedStyle(body).fontSize);
+
+        increaseFontButton.addEventListener('click', () => {
+            currentFontSize += 2;
+            body.style.fontSize = `${currentFontSize}px`;
+        });
+
+        decreaseFontButton.addEventListener('click', () => {
+            currentFontSize -= 2;
+            if (currentFontSize < 12) currentFontSize = 12;
+            body.style.fontSize = `${currentFontSize}px`;
+        });
+    </script>
 </body>
 </html>
