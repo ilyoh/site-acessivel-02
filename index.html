@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HuMii Show - Uma Experiência Única</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+<header>
+<h1 class="event-title">HuMii</h1>
+<div class="accessibility-buttons">
+<button id="increase-font" title="Aumentar fonte">A+</button>
+<button id="decrease-font" title="Diminuir fonte">A-</button>
+</div>
+</header>
+
+<main>
+    <section id="about" class="content-section">
+        <h2 class="section-title">Sobre o HuMii</h2>
+        <p>Prepare-se para uma experiência musical e sensorial inesquecível! HuMii é um evento que celebra a conexão humana através da música, arte e tecnologia. Reunimos artistas inovadores e um público vibrante para uma noite mágica.</p>
+        <p>Explore sons envolventes, visuais hipnotizantes e uma atmosfera eletrizante. HuMii é mais do que um show, é uma imersão em um universo de criatividade e emoção.</p>
+    </section>
+
+    <section id="artists" class="content-section">
+        <h2 class="section-title">Artistas Confirmados</h2>
+        <ul>
+            <li>Artista Cósmico (Eletrônica Experimental)</li>
+            <li>Sinfonia de Almas (Indie Folk)</li>
+            <li>Ritmos da Terra (Percussão Afro-Brasileira)</li>
+            <li>Visuais Oníricos (VJ Set)</li>
+            </ul>
+    </section>
+
+    <section id="location" class="content-section">
+        <h2 class="section-title">Local e Data</h2>
+        <p><strong>Local:</strong> Espaço Cultural Mauá (Mauá, SP)</p>
+        <p><strong>Data:</strong> 15 de Dezembro de 2023</p>
+        <p><strong>Horário:</strong> A partir das 20h</p>
+        <iframe src="[https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29221.378349234784!2d-46.47177473999999!3d-23.66782625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e61da050f71%3A0x44c226209ca9c64a!2sMau%C3%A1%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1702036808893!5m2!1spt-BR!2sbr](https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29221.378349234784!2d-46.47177473999999!3d-23.66782625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e61da050f71%3A0x44c226209ca9c64a!2sMau%C3%A1%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1702036808893!5m2!1spt-BR!2sbr)" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="map-disclaimer">Este é um mapa de exemplo de Mauá, SP. A localização exata do evento será divulgada em breve.</p>
+    </section>
+
+    <section id="login-register" class="content-section">
+        <h2 class="section-title">Login e Cadastro</h2>
+        <div class="form-container">
+            <div id="login-area">
+                <h3>Login</h3>
+                <form>
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="login-email" required>
+                    <label for="login-password">Senha:</label>
+                    <input type="password" id="login-password" name="login-password" required>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+            <div id="register-area">
+                <h3>Cadastro</h3>
+                <form>
+                    <label for="register-name">Nome:</label>
+                    <input type="text" id="register-name" name="register-name" required>
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" name="register-email" required>
+                    <label for="register-password">Senha:</label>
+                    <input type="password" id="register-password" name="register-password" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="tickets" class="content-section">
+        <h2 class="section-title">Ingressos</h2>
+        <p>Os ingressos para o HuMii estarão à venda a partir de [Data de Início]. Fique atento às nossas redes sociais para mais informações!</p>
+        <button class="call-to-action">Comprar Ingressos (Em Breve)</button>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 HuMii Show - Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    const body = document.body;
+    const increaseFontButton = document.getElementById('increase-font');
+    const decreaseFontButton = document.getElementById('decrease-font');
+    let currentFontSize = parseFloat(getComputedStyle(body).fontSize);
+
+    increaseFontButton.addEventListener('click', () => {
+        currentFontSize += 2;
+        body.style.fontSize = `${currentFontSize}px`;
+    });
+
+    decreaseFontButton.addEventListener('click', () => {
+        currentFontSize -= 2;
+        if (currentFontSize < 12) currentFontSize = 12; // Limite mínimo para legibilidade
+        body.style.fontSize = `${currentFontSize}px`;
+    });
+</script>
+</body>
+</html>
